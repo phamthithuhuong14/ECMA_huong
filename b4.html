@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        let classRoom = [
+            "pham thi thu huong",
+            "hoang minh duc",
+            "le xuan hau",
+            "Nguyen cong tuan",
+
+        ]
+
+        //1
+        var fullName = "hoang minh duc";
+
+        // Tách tên và họ
+        var nameParts = fullName.trim().split(" ");
+        var firstName = nameParts[0];
+        var lastName = nameParts[nameParts.length - 1];
+
+        console.log("Tên: " + lastName);
+        console.log("Họ: " + firstName);
+
+        //2
+        var students = ["pham thi thu huong", "le xuan hau", "Nguyen cong tuan"];
+
+        // Thêm sinh viên "mduc" vào vị trí thứ 2
+        students.splice(2, 0, "hoang minh duc");
+
+        console.log(students);
+
+        //3
+        var students = ["pham thi thu huong", "hoang minh duc", "le xuan hau", "Nguyen cong tuan"];
+
+        // Xoá sinh viên thứ 1
+        students.splice(1, 1);
+
+        console.log(students);
+
+
+    </script>
+</body>
+
+</html>
